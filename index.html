@@ -12,7 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -52,8 +55,61 @@
     <!-- end -->
 
     <!-- home section -->
-    <section class="home" id="home"></section>
+    <section class="home" id="home">
+      <div class="home-slider swiper mySwiper">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Out Spesial Dish</span>
+              <h3>spicy noodles</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum veritatis a laborum
+              </p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="img/home-2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Out Spesial Dish</span>
+              <h3>pasta special</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum veritatis a laborum
+              </p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="img/home-2.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <div class="content">
+              <span>Out Spesial Dish</span>
+              <h3>pasta special</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum veritatis a laborum
+              </p>
+              <a href="" class="btn">Order Now</a>
+            </div>
+            <div class="image">
+              <img src="img/home-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <!-- end home section -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
