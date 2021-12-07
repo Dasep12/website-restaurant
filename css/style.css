@@ -490,6 +490,59 @@ header #menu-bars {
 }
 /* end */
 
+/* orders css */
+.order form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.order form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order form .inputBox .input {
+  width: 49%;
+}
+
+.order form .inputBox .input span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--light-color);
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea {
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus {
+  border: 0.1rem solid var(--green);
+}
+.order form .inputBox .input textarea {
+  height: 20rem;
+  resize: none;
+}
+
+.order form .btn {
+  margin-top: 0;
+}
+/* orders css */
+
 /* media queries*/
 @media (max-width: 991px) {
   html {
@@ -544,6 +597,22 @@ header #menu-bars {
     height: auto;
     /* margin: 100%; */
     margin-left: -70px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .dishes .box-container .box img {
+    height: auto;
+    /* margin: 100%; */
+    margin-left: -70px;
+  }
+
+  .order form .inputBox .input {
+    width: 100%;
   }
 }
 /* end  */
